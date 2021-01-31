@@ -1,0 +1,9 @@
+steps:
+  - name: 'node:latest'
+    entrypoint: 'yarn'
+    args:
+      - 'install'
+  - name: 'node:latest'
+    entrypoint: 'yarn'
+    args:
+      - 'deploy'
