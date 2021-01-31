@@ -1,5 +1,6 @@
 import React from 'react';
 import { NextPage, GetStaticProps } from 'next';
+import Link from 'next/link';
 import { Post } from 'types/post';
 import { getPosts } from 'lib/contentful/post';
 
@@ -21,6 +22,9 @@ const IndexPage: NextPage<Props> = ({ posts }) => {
             <li key={post.id}>
               <p>{post.title}</p>
               <p>{post.summary}</p>
+              <Link href={`/posts/${encodeURIComponent(post.id)}`}>
+                <a>{'>> show detail'}</a>
+              </Link>
             </li>
           ))}
         </ul>
