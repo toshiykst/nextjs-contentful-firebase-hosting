@@ -7,3 +7,6 @@ steps:
     entrypoint: 'yarn'
     args:
       - 'deploy'
+    env:
+      - CONTENTFUL_SPACE_ID=${_CONTENTFUL_SPACE_ID}
+      - CONTENTFUL_ACCESS_TOKEN=${_CONTENTFUL_ACCESS_TOKEN}
