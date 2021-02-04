@@ -1,5 +1,5 @@
 {
-  "name": "with-typescript",
+  "name": "nextjs-contentful-firebase-hosting",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
